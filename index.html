@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Orientation - Sunway Tech Club</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -27,20 +27,30 @@
 			[hidden] {display: inherit !important;}
 			/* Base */
 			.reveal{font-size: 36px;}
-			.reveal section img{border: none;min-height: 245px;}
+			.reveal section img{border: none;box-shadow: none;}
 			header{position: fixed;top: 0;left: 0;width: 100%;max-height: 100px;}
 
 			/* Custom CSS */
+			.p-small{font-size: 1.6rem!important;}
 			#logo{max-width: 200px;margin: 30px;}
+			#hero-img{box-shadow: none;}
+			.logo{box-shadow: none;min-height: 80px;}
+			#events .figure-img{min-height: 245px;}
+			/* Hacked the positioning to align properly in slide, not tested in depth */
+			#recruit-poster{position: fixed;top: 0;left: 0;transform: translateX(50%);}
 		</style>
 	</head>
 	<body>
 		<header><img id="logo" src="images/stclogo.png" alt="STC logo"></header>
 		<div class="reveal" data-background-transition="slide">
 			<div class="slides">
+				<section>
+					<img id="hero-img" src="images/stclogo.png" alt="STC logo">
+					<p class="text-center text-muted p-small">Community &nbsp; Education &nbsp; Entreprenuership</p>
+				</section>
 				<section class="text-left">
 					<h1>Purpose</h1>
-					<p>There is a gap between tech education and the industry. We are here to close that gap.</p>
+					<p>There are gaps between tech education, tech entrepreneurship, and tech industry. We are here to fill these gaps.</p>
 				</section>
 				<!-- <section class="text-left">
 					<h1>Vision</h1>
@@ -55,37 +65,44 @@
 				<section class="text-left">
 					<div class="container">
 						<div class="row">
-							<div class="col-4">
-								<h3>We provide:</h3>
-							</div>
-							<div class="col-8">
+							<h3>You get:</h3>
+						</div>
+						<div class="row text-center">
+							<div class="col fragment fade-left">
+								<img class="logo" src="images/logo_meeting.png" alt="two person shaking hands">
 								<h4>Community</h4>
-								<p>We're here to build an open community where we collaboratively learn and hack together.</p>
+								<p class="p-small">We collaboratively learn and hack together.</p>
+							</div>
+							<div class="col fragment fade-left">
+								<img class="logo" src="images/logo_books.png" alt="book">
 								<h4>Education</h4>
-								<p>We're here to bridge the gap between Tech Education and the Tech Industry</p>
+								<p class="p-small">We bridge the gap between tech education, entrepreneurship and industry.</p>
+							</div>
+							<div class="col fragment fade-left">
+								<img class="logo" src="images/logo_idea.png" alt="lighted lightbulb">
 								<h4>Entreprenuership</h4>
-								<p>We're here to build and encourage the technopreneurial culture in the Sunway Tech Community</p>
+								<p class="p-small">We build a technopreneurial culture in our community</p>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="text-left">
+				<section class="text-left" id="events">
 					<section>
 						<h1>Past Events</h1>
 						<div class="row">
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/ioxkl.jpg" alt="">
 									<figcaption class="figure-caption">Google I/O Extended 2018</figcaption>
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/makerspace.jpg" alt="">
 									<figcaption class="figure-caption">iLabs Makerspace Opening</figcaption>
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/cityhack.jpg" alt="">
 									<figcaption class="figure-caption">Cityhack</figcaption>
@@ -96,19 +113,19 @@
 					<section>
 						<h1>Past Events</h1>
 						<div class="row">
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/firebase.jpg" alt="">
 									<figcaption class="figure-caption">GDG DevFest X Firebase Summit 2018</figcaption>
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/weblaunch.jpg	" alt="">
 									<figcaption class="figure-caption">WebLaunch</figcaption>
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/pythonworkshop2.png" alt="">
 									<figcaption class="figure-caption">Python Workshop</figcaption>
@@ -119,19 +136,19 @@
 					<section>
 						<h1>Past Events</h1>
 						<div class="row">
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/iosworkshop.jpg" alt="">
 									<figcaption class="figure-caption">iOS Workshop</figcaption>
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/android_logo_PNG35.jpg" alt="">
 									<figcaption class="figure-caption">Android Workshop</figcaption>
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col">
 								<figure class="figure">
 									<img class="figure-img img-fluid" src="images/events/react.jpg" alt="">
 									<figcaption class="figure-caption">React Native Workshop</figcaption>
@@ -150,13 +167,22 @@
 					</ul>
 				</section>
 				<section>
-					<h1>WebLaunch 3.0</h1>
+					<h3>WebLaunch 3.0</h3>
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-4">
-								<img class="img-fluid" src="images/events/weblaunch.png" alt="">
+								<img class="img-fluid" src="images/events/weblaunch.png" alt="weblaunch registration">
 							</div>
 
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-4">
+								<img id="recruit-poster" class="img-fluid" src="images/stc-recruitment.jpg" alt="recruitment poster">
+							</div>
 						</div>
 					</div>
 				</section>
@@ -169,8 +195,8 @@
 					</ul>
 				</section>
 				<section class="text-left">
-					<h1>Follow us for the latest updates</h1>
-					<ul>
+					<h1 class="fragment grow">Join us!</h1>
+					<ul class="fragment">
 						<li>sunwaytechclub.slack.com</li>
 						<li>sunwaytechclub.org/telegram</li>
 						<li>fb.com/sunwaytechclub</li>
